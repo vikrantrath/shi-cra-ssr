@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOMServer from "react-dom/server";
+import { Helmet } from "react-helmet";
 
 // import our main App component
 import App from "../../src/pages/index";
@@ -19,7 +20,12 @@ export default (req, res, next) => {
 
     // render the app as a string
     const html = ReactDOMServer.renderToString(<App />);
-
+    const helmet = Helmet.renderStatic();
+    htmlData = htmlData.replace(/\$OG_TITLE/g, helmet.title.toString());
+    htmlData = htmlData.replace(
+      '<meta data-react-helmet="true"/>',
+      helmet.meta.toString()
+    );
     // inject the rendered app into our html and send it
     return res.send(
       htmlData.replace('<div id="root"></div>', `<div id="root">${html}</div>`)
