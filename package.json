@@ -4,35 +4,36 @@
   "private": true,
   "dependencies": {
     "@babel/register": "^7.0.0",
-    "babel-plugin-dynamic-import-node": "^2.0.0",
-    "babel-plugin-syntax-dynamic-import": "^6.18.0",
-    "express": "^4.16.2",
-    "file-loader": "^2.0.0",
-    "ignore-styles": "^5.0.1",
-    "react-helmet": "^5.2.0",
-    "react-loadable": "^5.3.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "babel-plugin-dynamic-import-node": "^2.0.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "bootstrap": "^4.4.1",
+    "compression": "^1.7.4",
+    "express": "^4.16.2",
+    "file-loader": "^2.0.0",
+    "font-awesome": "^4.7.0",
+    "ignore-styles": "^5.0.1",
+    "md5-file": "^4.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.0",
+    "react-loadable": "^5.3.1",
     "react-scripts": "3.3.1",
-    "url-loader": "^1.0.1",
-    "bootstrap": "^4.4.1",
-    "font-awesome": "^4.7.0",
     "reactstrap": "^8.3.1",
-    "md5-file": "^4.0.0"
+    "url-loader": "^1.0.1"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"
   },
   "scripts": {
     "start": "node server/bootstrap.js",
-    "dev" : "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prod" : "npm run build && node server/bootstrap.js"
+    "prod": "npm run build && node server/bootstrap.js"
   },
   "eslintConfig": {
     "extends": "react-app"

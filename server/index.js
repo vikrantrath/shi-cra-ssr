@@ -3,11 +3,15 @@ import express from 'express';
 // we'll talk about this in a minute:
 import serverRenderer from './middleware/renderer';
 
+import compression from 'compression'
+
 const PORT = process.env.PORT ||3000;
 const path = require('path');
 
 // initialize the application and create the routes
 const app = express();
+app.use(compression())
+
 const router = express.Router();
 
 // root (/) should always serve our server rendered page
@@ -27,7 +31,6 @@ app.use(router);
 // react-router will take care of everything
 router.use('*', serverRenderer);
 app.use(router);
-
 // start the app
 app.listen(PORT, (error) => {
     if (error) {
