@@ -21,7 +21,11 @@ export default (req, res, next) => {
     // render the app as a string
     const html = ReactDOMServer.renderToString(<App />);
     const helmet = Helmet.renderStatic();
-    htmlData = htmlData.replace(/\$OG_TITLE/g, helmet.title.toString());
+    console.log(helmet.title.toComponent());
+    htmlData = htmlData.replace(
+      "<title>$OG_TITLE</title>",
+      helmet.title.toString()
+    );
     htmlData = htmlData.replace(
       '<meta data-react-helmet="true"/>',
       helmet.meta.toString()
