@@ -3,9 +3,9 @@ import './Hotlinks.css'
 
 export default function HotLinks() {
     return (
-        <div className"row pl-4 pr-4">
-            <h6 className"font-weight-bold text-white mt-2 mb-2"><ins>Hot Links</ins></h6>
-            <ul className"list-unstyled text-white col-md-12 pl-0">
+        <div className="row pl-4 pr-4">
+            <h6 className="font-weight-bold text-white mt-2 mb-2"><ins>Hot Links</ins></h6>
+            <ul className="list-unstyled text-white col-md-12 pl-0">
                 <li className="cool-link">Career</li>
                 <li className="cool-link">Contact Us</li>
                 <li className="cool-link">Disclaimer</li>

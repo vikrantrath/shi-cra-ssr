@@ -47,7 +47,7 @@ export default function Industry() {
             <div className="row">
                 {sectorList.map(item => {
                     return (
-                        < div className"text-center col-md-6 col-sm-12" >
+                        < div className="text-center col-md-6 col-sm-12" >
                             <div className="col-md-12">
                                 <div className="industry-icon">
                                     <i className={item.icon} aria-hidden="true"></i>
@@ -59,7 +59,7 @@ export default function Industry() {
                                 <ul className="row list-unstyled">
                                     {item.items.map(e => {
                                         return (
-                                            < li className"col-md-4 col-sm-12 text-left p-0" >
+                                            < li className="col-md-4 col-sm-12 text-left p-0" >
                                                 <div className="industry-icon pl-2 ">
                                                     <i className="fa fa-chevron-right ml-1" aria-hidden="true"></i>
                                                 </div>
@@ -69,7 +69,7 @@ export default function Industry() {
                                     })}
                                 </ul>
                             </div>
-                            <button type="button" className"float-left btn btn-outline-primary mt-2 mb-2">Submit</button>
+                            <button type="button" className="float-left btn btn-outline-primary mt-2 mb-2">Submit</button>
                         </ div>
                     )
                 })}
