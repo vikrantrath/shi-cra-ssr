@@ -11,6 +11,7 @@ const path = require('path');
 // initialize the application and create the routes
 const app = express();
 app.use(compression())
+app.disable('x-powered-by');
 
 const router = express.Router();
 
