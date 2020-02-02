@@ -240,20 +240,20 @@ export default function Header(props) {
         <>
             <div className="row" style={{ backgroundColor: "#0f0f7a" }}>
                 <div className="col-md-3 text-center text-light align-content-center pt-2"><GoogleTranslate /></div>
-                <div className="col-md-6 text-center text-light pt-2"><i class="fa fa-phone" aria-hidden="true"></i>+91-33-4600-9199 (India),<i class="fa fa-phone" aria-hidden="true"></i> +1-414-240-5010 (U.S.)</div>
+                <div className="col-md-6 text-center text-light pt-2"><i className"fa fa-phone" aria-hidden="true"></i>+91-33-4600-9199 (India),<i className"fa fa-phone" aria-hidden="true"></i> +1-414-240-5010 (U.S.)</div>
                 <div className="col-md-3 text-center text-light pt-2">
-                    <ul class="list-inline">
-                        <li class="list-inline-item">Home</li>
-                        <li class="list-inline-item border-left pl-1">News</li>
-                        <li class="list-inline-item border-left pl-1">Press</li>
-                        <li class="list-inline-item border-left pl-1">Blog</li>
-                        <li class="list-inline-item border-left pl-1">Query</li>
-                        <li class="list-inline-item border-left pl-1">Login</li>
+                    <ul className"list-inline">
+                        <li className"list-inline-item">Home</li>
+                        <li className"list-inline-item border-left pl-1">News</li>
+                        <li className"list-inline-item border-left pl-1">Press</li>
+                        <li className"list-inline-item border-left pl-1">Blog</li>
+                        <li className"list-inline-item border-left pl-1">Query</li>
+                        <li className"list-inline-item border-left pl-1">Login</li>
                     </ul>
                 </div>
             </div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
-                <div class="col-md-2">
+                <div className"col-md-2">
                     <img src={Logo} height="60px" href="#" className="navbar-brand" />
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -275,10 +275,10 @@ export default function Header(props) {
                             }
                         })}
                         <li className="nav-item ml-2">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" />
-                                <div class="input-group-append">
-                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i>
+                            <div className"input-group">
+                                <input type="text" className"form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" />
+                                <div className"input-group-append">
+                                    <span className"input-group-text" id="basic-addon1"><i className"fa fa-search" aria-hidden="true"></i>
                                     </span>
                                 </div>
                             </div></li>

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <section id="Home">
       <Helmet>
-        <title>Sheer Analytics And Insights. Welcome to Home</title>
+        <title>Sheer Analytics And Insights</title>
         <meta name="description" content="Online presence of Sheer Analytics and Insights PVT LTD. " />
       </Helmet>
       <FeaturedSection />

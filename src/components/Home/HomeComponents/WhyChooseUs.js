@@ -23,8 +23,8 @@ export default function () {
             <div className="row">
                 {items.map((item, i) => {
                     return (
-                        < div class="text-center col-md-2 col-sm-6" >
-                            <img src={item.imageSrc} class="rounded mb-3" alt="..." />
+                        < div className"text-center col-md-2 col-sm-6" >
+                            <img src={item.imageSrc} className"rounded mb-3" alt="..." />
                             <div className="font-weight-bold">{item.primaryText}</div>
                             <div className="font-weight-normal p-2">{item.secondaryText}</div>
                         </div>)

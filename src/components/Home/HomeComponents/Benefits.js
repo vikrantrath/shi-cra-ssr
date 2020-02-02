@@ -13,7 +13,7 @@ export default function Benefits() {
             <div className="row">
                 {benefits.map(item => {
                     return (
-                        <div class="text-center col-md-4 col-sm-12" >
+                        <div className"text-center col-md-4 col-sm-12" >
                             <h5 className="font-weight-bold"> {item.name}</h5>
                             <div className="font-weight-light text-muted">{item.desc}</div>
                         </div>

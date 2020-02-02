@@ -36,7 +36,7 @@ export default function Clients() {
                         return (
                             <div className="col-md-12">
                                 <div className="font-weight-light text-muted">{e.testimonial}</div>
-                                <footer class="blockquote-footer font-weight-bold h2" style={{ fontSize: '1.4em' }}>{e.name}</footer>
+                                <footer className"blockquote-footer font-weight-bold h2" style={{ fontSize: '1.4em' }}>{e.name}</footer>
                             </div>
                         );
                     })}

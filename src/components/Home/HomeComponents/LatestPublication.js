@@ -22,23 +22,23 @@ export default function LatestPublication() {
         <div className="container">
             <SectionHeader headingText={"Latest Publications"} />
             <div className="row">
-                < div class="text-center col-md-8 col-sm-12" >
-                    <h5 class="text-center">Market Research Reports</h5>
+                < div className"text-center col-md-8 col-sm-12" >
+                    <h5 className"text-center">Market Research Reports</h5>
                     {mrReports.map(e => {
                         return (
                             <div className="font-weight-lighter text-left p-2 border"><a href="#">{e}</a></div>
                         );
                     })}
-                    <button type="button" class="btn btn-outline-primary mt-2 mb-2">View All Latest Reports</button>
+                    <button type="button" className"btn btn-outline-primary mt-2 mb-2">View All Latest Reports</button>
                 </ div>
-                < div class="text-center col-md-4 col-sm-12" >
-                    <h5 class="text-center">Press Release</h5>
+                < div className"text-center col-md-4 col-sm-12" >
+                    <h5 className"text-center">Press Release</h5>
                     {pressRelease.map(e => {
                         return (
                             <div className="font-weight-lighter text-left p-2 border"><a href="#">{e}</a></div>
                         );
                     })}
-                    <button type="button" class="btn btn-outline-primary mt-2 mb-2">View All Press</button>
+                    <button type="button" className"btn btn-outline-primary mt-2 mb-2">View All Press</button>
                 </ div>
             </div>
         </div>

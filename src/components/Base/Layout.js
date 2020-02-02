@@ -4,13 +4,13 @@ import Header from '../Base/Header';
 import Footer from '../Base/Footer';
 function Layout({ children }) {
     return (
-        <body>
+        <>
             {/* Navigation */}
             <Header />
             {children}
             {/* Footer */}
             <Footer />
-        </body>
+        </>
     );
 }
 
